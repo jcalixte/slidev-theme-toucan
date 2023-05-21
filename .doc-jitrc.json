@@ -1,0 +1,10 @@
+{
+  "patterns": {
+    "**/*.md, **/*.vue, **/*.ts, **/*.css": [
+      {
+        "label": "Slidev guide",
+        "uri": "https://sli.dev/guide/"
+      }
+    ]
+  }
+}
