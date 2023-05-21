@@ -4,18 +4,21 @@ import type { CSSProperties } from "vue"
 /**
  * Resolve urls from frontmatter and append with the base url
  */
-export function resolveAssetUrl(url: string) {
+export const resolveAssetUrl = (url: string): string => {
   if (url.startsWith("/")) {
-    return import.meta.env.BASE_URL + url.slice(1)
+    return (
+      (import.meta as unknown as { env: { BASE_URL: string } }).env.BASE_URL +
+      url.slice(1)
+    )
   }
 
   return url
 }
 
-export function handleBackground(
+export const handleBackground = (
   background?: string,
   dim = false
-): CSSProperties {
+): CSSProperties => {
   const isColor =
     background && ["#", "rgb", "hsl"].some((v) => background.indexOf(v) === 0)
 
