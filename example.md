@@ -1,5 +1,6 @@
 ---
 theme: ./
+favicon: 'https://cdn.jsdelivr.net/gh/jcalixte/static/tucano.svg'
 ---
 
 # Tucano
@@ -7,7 +8,7 @@ theme: ./
 Slides for joyful presentation
 
 <p>
-  Press <kbd>space</kbd> for next page <carbon:arrow-right class="inline"/>
+  Press <kbd>space</kbd> for next page <carbon:arrow-right />
 </p>
 
 ---

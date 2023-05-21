@@ -7,7 +7,7 @@ A clean and joyful theme for [Slidev](https://github.com/slidevjs/slidev) with t
 <!--
   Learn more about how to write a theme:
   https://sli.dev/themes/write-a-theme.html
---->
+-->
 
 <!--
   run `npm run dev` to check out the slides for more details of how to start writing a theme
