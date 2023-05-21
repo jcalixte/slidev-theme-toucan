@@ -1,5 +1,5 @@
 {
-  "name": "slidev-theme-toucan",
+  "name": "slidev-theme-tucano",
   "description": "Slidev Theme with the clean and joyful colors of Brazil",
   "version": "1.0.0",
   "keywords": [
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "slidev build example.md",
-    "dev": "slidev example.md --open",
+    "dev": "slidev example.md",
     "export": "slidev export example.md",
     "screenshot": "slidev export example.md --format png"
   },
