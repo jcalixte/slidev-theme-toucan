@@ -2,13 +2,53 @@
 theme: ./
 ---
 
-# Slidev Theme Starter
+# Tucano
 
-Presentation slides for developers
+Slides for joyful presentation
 
 <p>
-  Press Space for next page <carbon:arrow-right class="inline"/>
+  Press <kbd>space</kbd> for next page <carbon:arrow-right class="inline"/>
 </p>
+
+---
+layout: intro
+---
+
+# Intro
+
+<Toc />
+
+---
+layout: two-cols
+---
+
+# The build-in layouts
+
+- center,
+- cover,
+- default,
+- end,
+- fact,
+- full,
+- image-left,
+- image-right,
+- image,
+
+::right::
+
+<br>
+<br>
+<br>
+
+- iframe-left,
+- iframe-right,
+- iframe,
+- intro,
+- none,
+- quote,
+- section,
+- statement,
+- two-cols,
 
 ---
 
@@ -16,13 +56,13 @@ Presentation slides for developers
 
 Slidev is a slides maker and presenter designed for developers, consist of the following features
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
+- **Text-based** - focus on the content with Markdown, and then style them later
+- **Themable** - theme can be shared and used with npm packages
+- **Developer Friendly** - code highlighting, live coding with autocompletion
+- **Interactive** - embedding Vue components to enhance your expressions
+- **Recording** - built-in recording and camera view
+- **Portable** - export into PDF, PNGs, or even a hostable SPA
+- **Hackable** - anything possible on a webpage
 
 Read more about [Why Slidev?](https://sli.dev/guide/why)
 
@@ -46,7 +86,7 @@ layout: image-left
 image: 'https://source.unsplash.com/collection/9657233/1920x1080'
 ---
 
-# Code
+# Image left
 
 Use code snippets and get the highlighting directly!
 
@@ -60,12 +100,19 @@ interface User {
 
 function updateUser(id: number, update: Partial<User>) {
   const user = getUser(id)
-  const newUser = { ...user, ...update, age: 18 }
+  const newUser = { ...user, ...update }
   saveUser(id, newUser)
 
   return true
 }
 ```
+
+---
+layout: image-right
+image: 'https://source.unsplash.com/collection/9530167/1920x1080'
+---
+
+# Image right
 
 ---
 layout: center
