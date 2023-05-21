@@ -1,6 +1,6 @@
-@import 'prism-theme-vars/base.css';
-@import 'codemirror-theme-vars/base.css';
-@import 'prism-theme-vars/to-codemirror.css';
+@import "prism-theme-vars/base.css";
+@import "codemirror-theme-vars/base.css";
+@import "prism-theme-vars/to-codemirror.css";
 
 :root {
   --prism-font-family: var(--slidev-code-font-family);
@@ -12,13 +12,13 @@ html:not(.dark) {
   --prism-comment: #a0ada0;
   --prism-string: #b56959;
   --prism-literal: #2f8a89;
-  --prism-number: #296aa3;
-  --prism-keyword: #1c6b48;
+  --prism-number: var(--slidev-theme-secondary);
+  --prism-keyword: var(--slidev-theme-primary);
   --prism-function: #6c7834;
   --prism-boolean: #1c6b48;
   --prism-constant: #a65e2b;
   --prism-deleted: #a14f55;
-  --prism-class: #2993a3;
+  --prism-class: var(--slidev-theme-secondary);
   --prism-builtin: #ab5959;
   --prism-property: #b58451;
   --prism-namespace: #b05a78;
@@ -35,12 +35,12 @@ html.dark {
   --prism-string: #d48372;
   --prism-literal: #429988;
   --prism-keyword: #4d9375;
-  --prism-boolean: #1c6b48;
-  --prism-number: #6394bf;
+  --prism-boolean: var(--slidev-theme-primary);
+  --prism-number: var(--slidev-theme-secondary);
   --prism-variable: #c2b36e;
   --prism-function: #a1b567;
   --prism-deleted: #a14f55;
-  --prism-class: #54b1bf;
+  --prism-class: var(--slidev-theme-secondary);
   --prism-builtin: #e0a569;
   --prism-property: #dd8e6e;
   --prism-namespace: #db889a;
@@ -54,7 +54,7 @@ html.dark {
   --prism-selection-background: #444444;
 }
 
-pre[class*='language-'] {
+pre[class*="language-"] {
   @apply p-2;
 }
 
@@ -64,11 +64,10 @@ pre[class*='language-'] {
   @apply font-light py-0.5 rounded;
 }
 
-
 :not(pre) > code:before,
 :not(pre) > code:after {
-  content: '`';
-  opacity: 0.50;
+  content: "`";
+  opacity: 0.5;
 }
 
 :not(pre) > code:before {

@@ -1,9 +1,12 @@
 {
-  "name": "slidev-theme-apo",
+  "name": "slidev-theme-toucan",
+  "description": "Slidev Theme with the clean and joyful colors of Brazil",
   "version": "1.0.0",
   "keywords": [
     "slidev-theme",
-    "slidev"
+    "slidev",
+    "brasil",
+    "brazil"
   ],
   "engines": {
     "node": ">=14.0.0",
